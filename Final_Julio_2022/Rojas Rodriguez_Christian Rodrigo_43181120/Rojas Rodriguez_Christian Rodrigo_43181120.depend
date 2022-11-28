@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1666897500 source:c:\users\laboratorios\downloads\rojas rodriguez_christian rodrigo_43181120\cadena.cpp
+	"Cadena.h"
+	"string.h"
+
+1666897473 c:\users\laboratorios\downloads\rojas rodriguez_christian rodrigo_43181120\cadena.h
+	"iostream"
+
+1666894138 source:c:\users\laboratorios\downloads\rojas rodriguez_christian rodrigo_43181120\main.cpp
+	<iostream>
+	"Cadena.h"
+
