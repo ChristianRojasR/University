@@ -1,9 +1,13 @@
 #ifndef COLADINAMICA_H_INCLUDED
 #define COLADINAMICA_H_INCLUDED
 
-#include "string.h"
 #include "stdio.h"
+#include "string.h"
 #include "stdlib.h"
+
+#define SALIO_BIEN 1
+#define SALIO_MAL 0
+#define MENOR(X, Y) (X)<(Y) ? (X) : (Y)
 
 typedef struct sNodo
 {

@@ -31,10 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Cola.c">
+		<Unit filename="ColaDinamica.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Cola.h" />
+		<Unit filename="ColaDinamica.h" />
 		<Unit filename="Functions.c">
 			<Option compilerVar="CC" />
 		</Unit>
