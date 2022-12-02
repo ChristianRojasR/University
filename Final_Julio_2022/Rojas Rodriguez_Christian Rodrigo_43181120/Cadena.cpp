@@ -3,24 +3,58 @@
 
 Cadena::Cadena()
 {
-    this->cad = new char[1000];
+    cad = new char[10];
+    tam = 10;
+    cad[0] = '\0';
 }
 
-Cadena &Cadena::operator+(char *cad)
+Cadena::Cadena(const char* s)
 {
-    strcat(this->cad, cad);
+    tam = strlen(s);
+    cad = new char[tam + 1];
+    strcpy(cad, s);
+}
+
+Cadena::~Cadena()
+{
+    delete []cad;
+}
+
+Cadena &Cadena::operator+(const char *s)
+{
+    char *newCadena = cad;
+    tam += strlen(s);
+    cad = new char[tam+1];
+    strcpy(cad, newCadena);
+    strcpy(cad+strlen(s)-1, s);
+    delete []newCadena;
 
     return *this;
 }
 
-Cadena& Cadena::operator=(const char *s)
-{
-    memcpy(this->cad, s,sizeof(s));
+//const Cadena &Cadena::operator=(const char* s)
+//{
+//
+//    delete []cad;
+//    tam = strlen(s);
+//    cad = new char[tam + 1];
+//    strcpy(cad, s);
+//    return *this;
+//}
 
+const Cadena &Cadena::operator=(const Cadena &s)
+{
+    if(&s != this)
+    {
+        delete [] cad;
+        tam = s.tam;
+        cad = new char[tam + 1];
+        strcpy(cad, s.cad);
+    }
     return *this;
 }
 
-ostream &operator<<(ostream &os, Cadena &cad)
+ostream &operator<<(ostream &os, const Cadena &cad)
 {
     os << cad.cad;
 

@@ -18,6 +18,9 @@ typedef struct
 
 void generateFileDatos();
 int openFile(FILE **pf, char *name, char *typeOpen);
-int PonerEnColaArch(FILE *pf, t_cola *pc);
+int ponerEnColaArch(FILE *pf, t_cola *pc);
+void trozarLinea(t_alumno *d, char *s);
+int sacarDeColaYMostrar(t_cola *pc, void imprimir(const void* dat));
+void imprimirAlumno(const void* dat);
 
 #endif // FUNCTIONS_H_INCLUDED
