@@ -29,18 +29,18 @@
 	"stdio.h"
 	"stdlib.h"
 
-1669991998 source:c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\main.c
+1670023871 source:c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\main.c
 	<stdio.h>
 	<stdlib.h>
-	"ColaDinamica.h"
+	"ColaCircular.h"
 	"Functions.h"
 
-1669992311 c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\functions.h
+1670010148 c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\functions.h
 	"stdio.h"
 	"stdlib.h"
-	"ColaDinamica.h"
+	"ColaCircular.h"
 
-1669924103 source:c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\functions.c
+1670024227 source:c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\functions.c
 	"Functions.h"
 	"string.h"
 
@@ -52,4 +52,13 @@
 	"stdio.h"
 	"string.h"
 	"stdlib.h"
+
+1670023739 c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\colacircular.h
+	"stdio.h"
+	"string.h"
+	"stdlib.h"
+
+1670024099 source:c:\users\rodri\onedrive\escritorio\university\final_julio_2022\final_christian_rojas\colacircular.c
+	"ColaCircular.h"
+	<string.h>
 

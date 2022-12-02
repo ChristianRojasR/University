@@ -3,7 +3,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
-#include "ColaDinamica.h"
+#include "ColaCircular.h"
 
 #define SALIO_BIEN 1
 #define SALIO_MAL 0

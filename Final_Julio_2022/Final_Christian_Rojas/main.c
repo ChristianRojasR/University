@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "ColaDinamica.h"
+#include "ColaCircular.h"
 #include "Functions.h"
 
 int main()

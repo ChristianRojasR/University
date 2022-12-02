@@ -46,6 +46,11 @@ int sacarDeColaYMostrar(t_cola *pc, void imprimir(const void* dat))
 {
     t_alumno al;
 
+    puts("-------ver primero---------");
+    verPrimero(pc, &al, sizeof(t_alumno));
+    imprimir(&al);
+    puts("-------ver primero---------\n");
+
     while(!colaVacia(pc))
     {
         if(!desacolar(pc, &al, sizeof(t_alumno)))
