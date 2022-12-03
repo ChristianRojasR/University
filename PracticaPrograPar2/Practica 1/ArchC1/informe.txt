@@ -1,0 +1,9 @@
+Error  2 - Sector A - Vehiculo     AAA004
+Error  2 - Sector A - Vehiculo     AAA005
+Error  1 - Sector B - Vehiculo    BBB0001
+Error  5 - Sector A - Vehiculo     AAA001
+Error  5 - Sector A - Vehiculo     AAA002
+Error  5 - Sector A - Vehiculo     AAA003
+Error  5 - Sector A - Vehiculo     AAA004
+Error  5 - Sector A - Vehiculo     AAA005
+Error  5 - Sector B - Vehiculo    BBB0001

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1656770590 source:c:\users\rodrigo\desktop\practicaprograpar2\practica 1\puntyrec\main.cpp
+	<iostream>
+	"Punto.h"
+	"Recta.h"
+
+1656771667 source:c:\users\rodrigo\desktop\practicaprograpar2\practica 1\puntyrec\punto.cpp
+	"Punto.h"
+
+1656771219 c:\users\rodrigo\desktop\practicaprograpar2\practica 1\puntyrec\punto.h
+
+1656771804 c:\users\rodrigo\desktop\practicaprograpar2\practica 1\puntyrec\recta.h
+	"Punto.h"
+

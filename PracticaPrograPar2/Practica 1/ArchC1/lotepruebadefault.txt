@@ -1,0 +1,13 @@
+            0   YAENTROEA
+            0      MAS1EB
+            0   YAENTROEA
+            0      MAS2EB
+            0      MAS3EB
+            0     OTCECEA
+            0     OTSECSC
+            0     NOSALEA
+            0      MAS1SB
+            0      MAS2SB
+            0      MAS3SB
+            0   YAENTROSA
+            0     OTSECSA
