@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1670104170 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_2021_03\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+
+1670104103 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_2021_03\funciones.c
+	"Funciones.h"
+
+1670103940 c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_2021_03\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1670105397 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_2021_03\listasimple.c
+	"ListaSimple.h"
+
+1670105320 c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_2021_03\listasimple.h
+	<stdio.h>
+	<stdlib.h>
+
