@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1670368426 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_feb_2022\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaSimple.h"
+	"Matriz.h"
+
+1670368720 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_feb_2022\listasimple.c
+	"ListaSimple.h"
+	<string.h>
+
+1670368120 c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_feb_2022\listasimple.h
+	<stdio.h>
+	<stdlib.h>
+
+1670368373 source:c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_feb_2022\matriz.c
+	"Matriz.h"
+
+1670368276 c:\users\rodri\onedrive\escritorio\university\final_marzo_2021\final_feb_2022\matriz.h
+	"ListaSimple.h"
+
