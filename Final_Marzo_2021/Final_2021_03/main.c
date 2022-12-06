@@ -14,6 +14,7 @@ int main()
         return SALIO_MAL;
     crearLista(&lista);
     resolver(pf, &lista);
+    verLista(&lista, imprimirString);
 
     return 0;
 }

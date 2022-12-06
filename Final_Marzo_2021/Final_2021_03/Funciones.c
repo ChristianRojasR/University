@@ -1,4 +1,5 @@
 #include "Funciones.h"
+#include <string.h>
 
 void crearArchPrueba()
 {
@@ -29,5 +30,36 @@ int resolver(FILE *pf, t_lista *pl)
 
     printf("%s", linea);
 
+    cargarLista(linea, pl);
+
     return SALIO_BIEN;
+}
+
+void cargarLista(char *s, t_lista *pl)
+{
+    char *aux = s+1;
+    int band = 0;
+
+    // uso un while con es_letra para ir contando y luego cuando deje de serlo guardo la palabra
+    while(*aux)
+    {
+        if(!ES_LETRA(*aux))
+        {
+            if(ES_LETRA(*(aux+1)))
+            {
+                if(band)
+                {
+                    *(aux-1) = '\0';
+                    band = 0;
+                }
+                else
+                    *aux = '\0';
+                ponerEnLista(pl, s, sizeof(*s), compararString);
+                s=aux+1;
+            }
+            else
+                band =1;
+        }
+        aux++;
+    }
 }
