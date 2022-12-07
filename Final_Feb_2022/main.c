@@ -5,14 +5,23 @@
 
 int main()
 {
-    t_lista lista;
-    t_matriz mat[] = {{4, 1, 4},
-                          {1, 1, 1},
-                          {2, 1, 2},
-                          {3, 1, 3},
-                          {0, 1, 0}};
-
     puts("----------inicia_prueba-------------");
+    if(crear_arch_prueb())
+        puts("Se creo el archivo...\n");
+    t_lista lista;
+
+    FILE *pf_1, *pf_2;
+    if(!abrir_arch(&pf_1, "mat1.txt", "rt"))
+        return SALIO_MAL;
+    if(!abrir_arch(&pf_2, "mat2.txt", "rt"))
+    {
+        fclose(pf_1);
+        return SALIO_MAL;
+    }
+
+
+
+    /*
     crear_lista(&lista);
 
     int i;
@@ -24,6 +33,7 @@ int main()
     t_matriz aux;
     while(sacar_lista(&lista, &aux, sizeof(t_matriz)))
         imprimir_mat(&aux);
+    */
 
     return 0;
 }

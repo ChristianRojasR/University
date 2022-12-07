@@ -26,6 +26,5 @@ int sacar_lista(t_lista *p, void *dat, unsigned tam);
 
 void ver_lista(const t_lista *p, void imprimir(const void *dat));
 void imprimir_int(const void *dat);
-void imprimir_mat(const void *dat);
 
 #endif // LISTASIMPLE_H_INCLUDED
