@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1670627322 source:c:\users\rodri\onedrive\escritorio\university\final_feb_2022\final_feb_2022_c++\main.cpp
+	<iostream>
+	"Vector_Enteros.h"
+
+1670627433 source:c:\users\rodri\onedrive\escritorio\university\final_feb_2022\final_feb_2022_c++\vector_enteros.cpp
+	"Vector_Enteros.h"
+
+1670625610 c:\users\rodri\onedrive\escritorio\university\final_feb_2022\final_feb_2022_c++\vector_enteros.h
+	<iostream>
+
