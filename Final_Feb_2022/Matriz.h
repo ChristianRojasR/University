@@ -22,7 +22,7 @@ int abrir_arch(FILE **pf, const char *nom_arch, const char *t_apert);
 void cargar_mat(t_lista *p, FILE *pf);
 void cargar_tamanio(FILE *pf, t_tamanio *tam);
 int verificar_mat(const t_tamanio *tam_1, const t_tamanio *tam_2);
-int guardar_mat(const t_lista *p);
+void guardar_mat(const t_lista *p, const t_tamanio *tam, FILE *pf);
 void sumar_mat(const t_lista *mat_1, t_lista *mat_2, t_lista *sum);
 void imprimir_mat(const t_lista *p, const t_tamanio *tam);
 

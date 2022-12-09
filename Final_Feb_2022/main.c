@@ -40,5 +40,10 @@ int main()
     sumar_mat(&mat_1, &mat_2, &sum);
     imprimir_mat(&sum, &tam_1);
 
+    FILE *pf_sum;
+    if(!abrir_arch(&pf_sum, "suma.txt", "wt"))
+        return SALIO_MAL;
+    guardar_mat(&sum, &tam_1, pf_sum);
+
     return 0;
 }

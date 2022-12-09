@@ -148,26 +148,68 @@ int verificar_mat(const t_tamanio *tam_1, const t_tamanio *tam_2)
 
 void sumar_mat(const t_lista *mat_1, t_lista *mat_2, t_lista *sum)
 {
-    t_matriz *aux;
-    t_lista *copia = mat_2;
+    t_matriz *ele_1, *ele_2;
 
-    while(*mat_1)
+    while(*mat_1 && *mat_2)
     {
-        aux = (*mat_1)->dat;
+        ele_1 = ((t_matriz*)(*mat_1)->dat),
+        ele_2 = ((t_matriz*)(*mat_2)->dat);
 
-        while(*copia && comparacion_mat(&aux, (*copia)->dat) == 0)
-            copia = &(*copia)->sig;
+        int comp = comparacion_mat(ele_1, ele_2);
 
-        if(*copia)
+        if(comp == 0)
         {
-            t_matriz suma;
-            suma.col = aux->col;
-            suma.fil = aux->fil;
-            suma.dat = aux->dat + ((t_matriz*)(*copia)->dat)->dat;
-            cargar_lista_prioridad(sum, &suma, sizeof(suma), comparacion_mat);
+            t_matriz ele_sum;
+            ele_sum.fil = ele_1->fil;
+            ele_sum.col = ele_1->col;
+            ele_sum.dat = ele_1->dat + ele_2->dat;
+            cargar_lista_prioridad(sum, &ele_sum, sizeof(t_matriz), comparacion_mat);
+            mat_1 = &(*mat_1)->sig;
+            mat_2 = &(*mat_2)->sig;
         }
-
-        copia = &(*mat_2)->sig;
-        mat_1 = &(*mat_1)->sig;
+        if(comp < 0)
+        {
+            cargar_lista_prioridad(sum, ele_1, sizeof(t_matriz), comparacion_mat);
+            mat_1 = &(*mat_1)->sig;
+        }
+        if(comp > 0)
+        {
+            cargar_lista_prioridad(sum, ele_2, sizeof(t_matriz), comparacion_mat);
+            mat_2 = &(*mat_2)->sig;
+        }
     }
+
+    if(!*mat_2 && *mat_1)
+    {
+        while(*mat_1)
+        {
+            ele_1 = ((t_matriz*)(*mat_1)->dat);
+            cargar_lista_prioridad(sum, ele_1, sizeof(t_matriz), comparacion_mat);
+            mat_1 = &(*mat_1)->sig;
+        }
+    }
+
+    if(!*mat_1 && *mat_2)
+    {
+        while(*mat_2)
+        {
+            ele_2 = ((t_matriz*)(*mat_2)->dat);
+            cargar_lista_prioridad(sum, ele_2, sizeof(t_matriz), comparacion_mat);
+            mat_2 = &(*mat_2)->sig;
+        }
+    }
+}
+
+void guardar_mat(const t_lista *p, const t_tamanio *tam, FILE *pf)
+{
+    fprintf(pf, "[%d][%d]\n", tam->cant_fil, tam->cant_col);
+
+    t_matriz *aux;
+    while(*p)
+    {
+        aux = (t_matriz*)(*p)->dat;
+        fprintf(pf, "[%d][%d]%d\n", aux->fil, aux->col, aux->dat);
+        p = &(*p)->sig;
+    }
+    fclose(pf);
 }
