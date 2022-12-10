@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1670632683 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\llamada\main.cpp
+	<iostream>
+	"Llamada.h"
+
+1670633437 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\llamada\llamada.cpp
+	"Llamada.h"
+	<string.h>
+	<stdexcept>
+
+1670633319 c:\users\rodri\onedrive\escritorio\university\final_mar_2022\llamada\llamada.h
+	<iostream>
+	<string.h>
+
