@@ -1,22 +1,6 @@
-// Pila.h
-#include <stdio.h>
-#include <stdlib.h>
+#include "Pila_Dinamica.h"
 #include <string.h>
 
-#define SALIO_BIEN 1
-#define SALIO_MAL 0
-#define MINIMO(X, Y) (X)<(Y) ? (X) : (Y)
-
-typedef struct s_nodo
-{
-    void *dat;
-    unsigned tam;
-    struct s_nodo *sig;
-}t_nodo;
-
-typedef t_nodo *t_pila;
-
-// Pila.c
 void crear_pila(t_pila *p)
 {
     *p = NULL;
@@ -33,13 +17,13 @@ int poner_pila(t_pila *p, const void *dat, unsigned tam)
 
     if(!(nue = malloc(sizeof(t_nodo))))
         return SALIO_MAL;
-    if(!(nue->sig = malloc(sizeof(tam))))
+    if(!(nue->dat = malloc(sizeof(tam))))
     {
         free(nue);
         return SALIO_MAL;
     }
 
-    memcpy(nue->sig, dat, tam);
+    memcpy(nue->dat, dat, tam);
     nue->tam = tam;
     nue->sig = *p;
 
@@ -78,7 +62,7 @@ int sacar_pila(t_pila *p, void *dat, unsigned tam)
 
     if(aux == NULL)
         return SALIO_MAL;
-    
+
     *p = aux->sig;
     memcpy(dat, aux->dat, MINIMO(tam, aux->tam));
 

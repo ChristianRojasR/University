@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1670969782 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Pila_Dinamica.h"
+	"Funciones.h"
+
+1670950487 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\pila_dinamica.c
+	"Pila_Dinamica.h"
+	<string.h>
+
+1670950489 c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\pila_dinamica.h
+	<stdio.h>
+	<stdlib.h>
+
+1670970799 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\funciones.c
+	"Funciones.h"
+
+1670969742 c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"Pila_Dinamica.h"
+
