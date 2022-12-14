@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1670969782 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\main.c
+1670973704 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Pila_Dinamica.h"
@@ -20,4 +20,12 @@
 	<stdio.h>
 	<stdlib.h>
 	"Pila_Dinamica.h"
+
+1670973587 source:c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\pila_estatica.c
+	<string.h>
+	"Pila_Estatica.h"
+
+1670972428 c:\users\rodri\onedrive\escritorio\university\final_mar_2022\final_mar_c\pila_estatica.h
+	<stdio.h>
+	<stdlib.h>
 

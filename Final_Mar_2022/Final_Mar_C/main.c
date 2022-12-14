@@ -5,6 +5,7 @@
 
 int main()
 {
+    /*
     // Resolviendo el problema
     crear_arch_prueba();
 
@@ -32,7 +33,7 @@ int main()
     }
     fclose(pf);
     remove("datos.txt");
-    /*
+    */
     //Prueba de pila
     int vec[5] = {1, 2, 3, 4, 5};
     t_pila pila;
@@ -53,6 +54,6 @@ int main()
     }
     if(!pila_vacia(&pila))
         puts("Se vacio la pila...");
-    */
+
     return 0;
 }
