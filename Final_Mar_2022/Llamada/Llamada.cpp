@@ -11,7 +11,7 @@ Llamada::Llamada(const char *orig, const char *dest, int seg)
     this->segundos = seg;
 }
 
-Llamada::Llamada(Llamada& obj)
+Llamada::Llamada(const Llamada &obj)
 {
     this->origen = new char[strlen(obj.origen+1)];
     strcpy(this->origen, obj.origen);
@@ -26,7 +26,7 @@ Llamada::~Llamada()
     delete [] this->destino;
 }
 
-ostream& operator<<(ostream &os, Llamada &obj)
+ostream& operator<<(ostream &os, const Llamada &obj)
 {
     os << "( " << obj.origen
        << ", " << obj.destino
@@ -34,18 +34,21 @@ ostream& operator<<(ostream &os, Llamada &obj)
     return os;
 }
 
-Llamada& Llamada::operator+(Llamada& obj)
+Llamada Llamada::operator+(const Llamada &obj)
 {
     if(strcmp(this->origen, obj.origen) != 0)
         throw exception();
-    //Llamada nue (*this);
-    //nue.segundos = this->segundos + obj.segundos;
-    this->segundos += obj.segundos;
-    return *this;
+
+    Llamada nue = *this;
+    nue.segundos = this->segundos + obj.segundos;
+    nue.destino = new char[1];
+    strcpy(nue.destino, " ");
+    return nue;
 }
 
-Llamada& Llamada::operator+(int val)
+Llamada Llamada::operator+(const int val)
 {
-    this->segundos += val;
-    return *this;
+    Llamada nue = *this;
+    nue.segundos += val;
+    return nue;
 }

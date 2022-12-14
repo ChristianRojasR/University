@@ -35,10 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Funciones.h" />
-		<Unit filename="Pila_Dinamica.c">
+		<Unit filename="Pila_Circular.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Pila_Dinamica.h" />
+		<Unit filename="Pila_Circular.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

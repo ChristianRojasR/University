@@ -7,13 +7,14 @@ using namespace std;
 
 class Llamada
 {
-    friend ostream& operator<<(ostream &os, Llamada &obj);
+    friend ostream& operator<<(ostream &os, const Llamada &obj);
+
     public:
         Llamada(const char *orig, const char *dest, int seg);
-        Llamada(Llamada& obj);
+        Llamada(const Llamada &obj);
         ~Llamada();
-        Llamada& operator+(Llamada& obj);
-        Llamada& operator+(int val);
+        Llamada operator+(const Llamada &obj);
+        Llamada operator+(const int val);
 
     private:
         char *origen;
