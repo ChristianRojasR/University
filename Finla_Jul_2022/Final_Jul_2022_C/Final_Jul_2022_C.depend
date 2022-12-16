@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1671202579 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_2022\final_jul_2022_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+	"Lista_Simple.h"
+
+1671202499 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_2022\final_jul_2022_c\lista_simple.c
+	"Lista_Simple.h"
+	<string.h>
+
+1671202518 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_2022\final_jul_2022_c\funciones.c
+	"Funciones.h"
+	<string.h>
+
+1671202545 c:\users\rodri\onedrive\escritorio\university\finla_jul_2022\final_jul_2022_c\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"Lista_Simple.h"
+
+1671202491 c:\users\rodri\onedrive\escritorio\university\finla_jul_2022\final_jul_2022_c\lista_simple.h
+	<stdio.h>
+	<stdlib.h>
+
