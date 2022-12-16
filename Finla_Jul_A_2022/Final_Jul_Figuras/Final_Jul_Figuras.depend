@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\main.cpp
+	<iostream>
+
+1671215096 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\figurageometrica.cpp
+	"FiguraGeometrica.h"
+	<string.h>
+
+1671215611 c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\figurageometrica.h
+	<iostream>
+
+1671216071 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\cuadrado.cpp
+	"Cuadrado.h"
+
+1671217152 c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\cuadrado.h
+	"FiguraGeometrica.h"
+
+1671216331 source:c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\circulo.cpp
+	"Circulo.h"
+
+1671217152 c:\users\rodri\onedrive\escritorio\university\finla_jul_a_2022\final_jul_figuras\circulo.h
+	"FiguraGeometrica.h"
+
